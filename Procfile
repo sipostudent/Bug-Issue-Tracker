@@ -1,1 +1,1 @@
-web: sh -c 'cd bug_tracker && gunicorn settings.wsgi:application'
+web: gunicorn project.wsgi:application
