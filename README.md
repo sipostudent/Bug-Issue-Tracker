@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="bug_tracker/static/img/B.I-tablet.png" width="600">
+  <img src="static/img/B.I-tablet.png" width="600">
   <br>
     <br>
   B.I Tracker 
