@@ -2,8 +2,6 @@
 // Get the current year for the copyright
 $('#year').text(new Date().getFullYear());
 
-// CKEDITOR.replace('editor1');
-
 // Create a Stripe client.
 var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
@@ -32,9 +30,6 @@ var style = {
 var card = elements.create('card', {
     style: style
 });
-
-// Add an instance of the card Element into the `card-element` <div>.
-// card.mount('#card-element');
 
 // Handle real-time validation errors from the card Element.
 card.addEventListener('change', function (event) {
