@@ -40,3 +40,21 @@ body {
 main {
     flex: 1;
 }
+
+/* media queries */
+
+@media screen and (max-width: 576px) {
+    .table-sm td {
+        font-size:  0.8rem;
+        padding: 0.4rem;
+    }
+    .table-sm th {
+        font-size: 0.6rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .table-sm td a.btn {
+        padding: 0.4rem;
+        font-size: 0.5rem;
+        line-height: 1rem
+    }
+}
