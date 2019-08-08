@@ -18,7 +18,7 @@ This project is a fictional service, based on a real-world application, which of
 1. [About](#About)
 
     - [Goal](#Goal)
-    - [Functionality (User Stories)](#Functionality-User-Stories)
+    - [Functionality](#Functionality-User-Stories)
     - [Initiation](#Initiation)
 
 2. [UX](#UX)
@@ -27,15 +27,12 @@ This project is a fictional service, based on a real-world application, which of
     - [Layout Con](#Layout-Con-Moderate-Speed-and-Execution)
     - [Tablet Display](#Tablet-Display)
     - [Mobile Display](#Mobile-Display)
-    - [Additional Note](#Additional-Note)
     - [Colour Scheme](#Colour-Scheme)
-    - [Font](#Font)
     - [Navigation](#Navigation)
-    - [Database Structure](#Database-Structure)
 
 3. [Technologies](#Technologies)
 
-    - [Languages Frameworks Tools](#Languages-Frameworks-Tools)
+    - [Languages, Libraries & Frameworks](#Languages-Libraries-&-Frameworks)
     - [Other-Resources](#Other-Resources)
 
     - [Features](#Features)
@@ -48,11 +45,13 @@ This project is a fictional service, based on a real-world application, which of
     - [Tools-and-Methods-Used-for-Testing](#Tools-and-Methods-Used-for-Testing)
     - [Tested Sections 1 HTML & CSS](#Tested-Sections-1-HTML-&-CSS)
     - [Tested Sections 2 Python](#Tested-Sections-2-Python)
-    - [Unresolved Bugs](#Unresolved-Bugs)
+    - [Bugs (now resolved)](#Bugs-(now-resolved))
 
 5. [Deployment](#Deployment)
 
     - [How the project got deployed to Heroku](#How-the-project-got-deployed-to-Heroku)
+    - [Serving Static Files](#Serving-Static-Files)
+    - [Database Setup](#Database-Setup)
     - [Cloning the repository](#Cloning-the-repository)
     - [How to access the live application](#How-to-access-the-live-application)
     - [How to run things locally](#How-to-run-things-locally)
@@ -129,3 +128,357 @@ Opted for a neutral style template with a sketched type design to project a more
 
 - A navigation bar takes up space and a fixed one even more. That being the case, and that there is a lot of content to display in the form of tickets, etc., I deemed it not necessary to fix the navigation as there was no real advantage.
 
+#### Colour Scheme
+
+- The generation of a bespoke colour was accomplished by blending RGB and Hex colours to those of a video background via the use of HTML & CSS.
+
+  - ![#343a40](https://placehold.it/15/#343a40/000000?text=+) `#343a40` color description : Very dark grayish blue.
+
+    - navigations
+    - footer
+    - table
+
+  - ![#1a1a1a](https://placehold.it/15/1a1a1a/000000?text=+) `#1a1a1a` color description : Very dark gray (mostly black).
+
+    - button
+
+  - ![#f7f7f7](https://placehold.it/15/f7f7f7/000000?text=+) `#f7f7f7` color description : Very light gray (mostly white).
+
+    - color
+
+  - ![#f0ad4e](https://placehold.it/15/f0ad4e/000000?text=+) `#f0ad4e` color description : Soft orange.
+
+    - color
+
+  - ![#d9534f](https://placehold.it/15/d9534f/000000?text=+) `#d9534f` color description : Soft red.
+
+    - color
+
+  - ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` color description : White.
+
+    - color
+
+A colour encyclopedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching colour palettes.
+
+A placeholder image service provided by [Placeholder.com](https://placeholder.com/#How_To_Use_Our_Placeholders "Placeholder.com Official Site") was used to provide a list of colours for reference in the README file.
+
+[**To top**](#Table-of-Contents)
+
+## Technologies
+
+#### Languages, Libraries & Frameworks
+
+- [HTML](https://www.w3.org/TR/html5/ "HTML5 Official Site")
+is a semantic markup language utilised as the shell of the site.
+
+- [CSS](https://www.w3.org/Style/CSS/ "Cascading Style Sheets Official Site") means Cascading Style Sheets and was used on the design of the site.
+
+- [Python](www.python.org) was utilised to compose the game logic.
+
+- [Django](https://www.djangoproject.com/) is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+
+- [PostgreSQL](https://www.postgresql.org/)  is a general-purpose object-relational database management system. It allows you to add custom functions developed using different programming languages, in this case, Python. 
+
+- [jQuery](http://jquery.com/ "jQuery Official Site") is used for HTML document traversal and manipulation, event handling.
+
+- [javascript](https://www.javascript.com/ "Javascript Official Site") is used to create responsive, interactive elements for web pages, enhancing the user experience.
+
+- [Bootstrap](https://getbootstrap.com/ "Bootstrap Official Site") is utilised for developing the entire UI and consistent throughout.
+
+- [Font Awesome](https://fontawesome.com/ "Fontawesome Official Site") is the source for all icons.
+
+#### Python Modules and Packages
+
+1. [Stripe](www.stripe.com/) is am online payment systems for making secure payments.
+
+2. [Dj Database URL](https://pypi.org/project/dj-database-url/) a package that enables us to interface with a database URL permit to utilise DATABASE_URL condition variable to arrange our Django application.
+
+3. [Whitenoise](http://whitenoise.evans.io/en/stable/) permits to serve static records from Heroku without depending on different administrations.
+
+4. [Gunicorn](https://gunicorn.org/) is a Python WSGI HTTP Server for UNIX.
+
+5. [Bootswatch](https://bootswatch.com) is used for styling generic Bootstrap components.
+
+#### Database
+
+Heroku Postgres database was utilised for the deployed app.
+
+  #### Other Resources
+
+- [w3schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Slack](https://slack.com/)
+
+[**To top**](#Table-of-Contents)
+
+## Features
+
+#### Existing Features
+
+1. Login & Sign Up
+2. Ticket List
+3. View Ticket Details
+4. Commment on own tickets
+5. Commment on user profile
+6. Edit/Delete tickets
+7. Edit/Delete user profile
+8. Open new tickets based on bugs or feature requests
+9. Make a donation towards use of the application
+10. Superusers/admins can gain access via the admin panel and perform, data amendments.
+
+#### Features Left to Implement
+
+1. Password Update
+2. Username and/or password update
+3. Presently it is just conceivable to add remarks identified with the ticket; it could likewise be intriguing to enable clients to answer legitimately to a particular remark 
+4. Internal chat feature for users to interact with one another
+
+## Testing
+
+#### Tools and Methods Used for Testing
+
+- HTML
+
+  - [Freeformatter](https://www.freeformatter.com/)
+
+  - [The W3C Markup Validation Service](https://validator.w3.org/)
+
+- CSS
+
+  - [The W3C Markup Validation Service](https://jigsaw.w3.org/css-validator)
+
+- Python
+
+  - [Python Formatter](https://pythoniter.appspot.com/)
+
+- Phones
+
+  - Galaxy Note 3 (simulation and actual device)
+  - Galaxy Note 9
+  - Galaxy S5
+  - Galaxy S9/S9+
+  - iPhone 5/SE
+  - iPhone 6/7/8 (simulated and real device)
+  - iPhone 6/7/8 Plus
+  - iPhone X
+  - LG Optimus L70
+  - Microsoft Lumia 550
+  - Microsoft Lumia 950
+  - Nexus 5X
+  - Nexus 6P
+  - Nokia 8110 4G
+  - Pixel 2
+  - Pixel 2 XL
+
+- Tablets
+  - iPad (simulation and actual device)
+  - iPad Mini
+  - iPad Pro (10.5-inch)
+  - iPad Pro (12.9-inch) (simulated and real device)
+  - Kindle Fire HDX
+  - Nexus 10
+  - Nexus 7
+
+* Laptops
+
+  - MacBook Pro (simulated and real device)
+  - Asus UX 305 (simulation and actual device)
+
+* Televisions
+  - 1080p Full HD Television (simulated and real device)
+
+- Website responsiveness was also tested by resizing the window with every addition of a new code sequence.
+
+#### Tested Sections 1 HTML & CSS
+
+- External links to third party websites and code authors GitHub repository.
+
+- Checked button sizes so, they were responsive and large enough to be clicked.
+
+- Ensured individual section headers resized and appeared well when viewed on various device screens and added opacity to the navigation bar to allow for more visibility of section header area on smaller devices.
+
+- Spell checked all text content.
+
+- HTML and CSS validation via [w3.org](https://www.w3.org/ "W3C Official Site").
+
+- Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, individually smaller devices.
+
+#### Tested Sections 2 Python
+
+Manual testing was embraced for this application and acceptably passed. An example of the tests directed are as per the following:
+
+- Tested route catches and hyperlinks all through the page.
+- Tested the rationale of the application by looking at expected conduct against the database record information.
+- Tested the responsiveness of the application on various programs and after that utilising multiple gadgets.
+
+[**To top**](#Table-of-Contents)
+
+#### Bugs (now resolved)
+
+A table from the Bootstrap framework caused a compatibility issue with Heroku due to its large size. Adding a custom media to condense the size; made the app more responsive on mobiles.
+
+> Please see the **Acknowledgements** section for the credit given to my assistance in solving the problem.
+
+## Deployment
+
+#### How the project got deployed to Heroku
+
+1. Make a `requirements.txt` file utilizing the terminal command 'pip freeze > `requirements.txt`
+
+2. Make a `Procfile` with the terminal command `echo web: python app.py > Procfile`
+
+> Example: web: gunicorn project.wsgi:application
+
+3. `git add` and `git commit` the new prerequisites from the requirements.txt file and Procfile, then 'git push' the undertaking to GitHub. 
+
+4. Go to [Heroku](https://dashboard.heroku.com/) website.
+
+5. Make another application (app) on the [Heroku](https://dashboard.heroku.com/) website by tapping the "New" button on your dashboard. Name your app, followed by selecting Europe as your region. 
+
+6. Select application
+
+7. In the "Deployment Method" section, check to see if the application is already connected to GitHub. If not connected then click the relevant button to link the Heroku website to the dashboard.
+
+8. Affirm the connecting of the Heroku application to the right GitHub repository. 
+
+9. In the application dashboard, click on "Settings" > "Reveal Config Vars". 
+
+10. Set the accompanying config vars: 
+
+#### Serving Static Files
+
+
+1. Add `whitenoise` with pip install 
+
+```console
+pip install whitenoise
+```
+
+2. Add `whitenoise` to the `MIDDLEWARE` section of located in `base.py`
+
+```console
+MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+]
+```
+
+#### Database Setup
+
+1. In Heroku, access the `resources tab` then in `addons` search for `Heroku Postgres`
+
+2. In your application, configure `settings.py` as follows:
+
+```console
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'string',
+        'USER': 'string',
+        'PASSWORD': 'string',
+        'HOST': 'manny.db.elephantsql.com',
+        'PORT': '5432'
+    }
+}
+
+``` 
+
+3. In the Heroku application dashboard, click on "Settings" > "Reveal Config Vars". 
+
+4. Set the accompanying config vars which should also include the `database_url`
+
+5. Log in to `Heroku CLI`
+
+```console
+login Heroku
+```
+
+> Follow the remaining instructions which appear in your terminal.
+
+6. From the console run the following command:
+
+```console
+heroku run python3 manage.py migrate --app online-cookbook-sipo
+```
+
+7. Create a `superuser`
+
+```console
+heroku python3 manage.py createsuperuser --app online-cookbook-sipo
+```
+- Any progressions made to modals when the `makemigrations` command is run locally require obligatory submission of your migration files and deployment of the newer versions. Afterwards, run `heroku run python3 manage.py migrate app online-cookbook-sipo` to create migrations in a development environment.
+
+- Ordinarily, you would likewise need to introduce dj-database-url, a bundle that enables us to interface with a database url, and psycopg2 yet these bundles ought to be as of now introduced after the requirements.txt establishment
+
+#### Cloning the repository
+
+1. Open in terminal
+2. Change the present working directory to the area where you wish to place the cloned directory.
+3. Clone the repository or use the link below.
+
+```console
+git clone https://github.com/sipostudent/Milestone-Project-5.git
+```
+
+Deploy your changes, make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+#### How to access the live application
+
+- A live demonstration is accessible by clicking [here](https://b-i-tracker.herokuapp.com/ "Live Demonstration: B.I Tracker").
+
+#### How to run things locally
+
+
+1. Download the project onto a PC and open with a source-code editor.
+
+2. In the run.py file set the IP address and the PORT to the following:
+
+```console
+'IP', '127.0.0.1'
+```
+
+```console
+'PORT', '8000'
+```
+
+3. Install all of the prerequisites shown in the requirements.txt file via opening a Command-line interface (CLI) and navigating to the project root or by opening an integrated terminal and entering the following command:
+
+> Please Note: The CLI method for interacting with a computer may vary dependant upon the operating system in use.
+
+```console
+pip install -r requirements.txt
+```
+
+4. Initiate the app by entering the following command into a relevant terminal:
+
+```console
+python manage.py runserver
+```
+
+5. A message in your terminal will inform you that the project is now running with the following message:
+
+```console
+Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+```
+
+6. To display the project, open the above URL (localhost:8000) 
+
+[**To top**](#Table-of-Contents)
+
+## Credits
+
+#### Content
+
+- Except for the app (online cookbook) recipes, all written content is original and created by the code author (Sipo Charles).
+
+#### Acknowledgements
+
+- I received inspiration for this project from visiting [b-i-tracker.herokuapp.com](https://b-i-tracker.herokuapp.com/), but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
+
+- Special thanks to fellow Code Institute colleague [Anna Greaves](https://github.com/AJGreaves) for assistance with a bespoke media query which was utilised to improve the applications responsiveness. 
+
+#### Disclaimer
+
+This project is for educational purposes only.
+
+[**To top**](#Table-of-Contents)
