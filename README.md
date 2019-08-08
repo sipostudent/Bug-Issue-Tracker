@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="static/img/B.I-tablet.png" width="600">
+  <img src="static/img/b-i-tracker.tablet2.png" width="600">
   <br>
     <br>
   B.I Tracker 
@@ -109,13 +109,17 @@ Research to understand what apps of similar scope were already doing in terms of
 
 - Please note, except a slight difference in page/scale responsiveness, desktop applies the same UI.
 
-<img src="static/img/B.I-tablet.png" width="600">
+<img src="static/img/b-i-tracker.tablet2.png" width="600">
+
+<img src="static/img/b-i-tracker.tablet1.png" width="600">
 
 #### Mobile Display
 
 - This image represents the standard UI across most modern mobile devices.
 
-<img src="static/img/B.I-mobile.png" width="600">
+<img src="static/img/b-i-tracker.mobile1.png" width="600">
+
+<img src="static/img/b-i-tracker.mobile2.png" width="600">
 
 #### Template Style
 
