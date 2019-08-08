@@ -1,7 +1,4 @@
 
-// Get the current year for the copyright
-$('#year').text(new Date().getFullYear());
-
 // Create a Stripe client.
 var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
