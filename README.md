@@ -9,7 +9,7 @@
 
 <h4 align="center">An issue tracker web application that tracks bugs and feature requests.</h4>
 
-This project is a fictional service, based on a real-world application, which offers a practical user-experience.
+This project is a fictional service, based on a real-world application, which offers a possible user-experience.
 
 ## Table of Contents
 
@@ -33,11 +33,18 @@ This project is a fictional service, based on a real-world application, which of
 3. [Technologies](#Technologies)
 
     - [Languages, Libraries & Frameworks](#Languages-Libraries-&-Frameworks)
+
+    - [Python Modules and Packages](#Python-Modules-and-Packages)
+
+    - [Utilised Database](#Utilised-Database)
+
+    - [Languages, Libraries & Frameworks](#Languages-Libraries-&-Frameworks)
     - [Other-Resources](#Other-Resources)
 
     - [Features](#Features)
 
     - [Existing Features](#Existing-Features)
+    
     - [Features-Left-to-Implement](#Features-Left-to-Implement)
 
 4. [Testing](#Testing)
@@ -45,6 +52,7 @@ This project is a fictional service, based on a real-world application, which of
     - [Tools-and-Methods-Used-for-Testing](#Tools-and-Methods-Used-for-Testing)
     - [Tested Sections 1 HTML & CSS](#Tested-Sections-1-HTML-&-CSS)
     - [Tested Sections 2 Python](#Tested-Sections-2-Python)
+    - [Tested Sections 3 Forms](#Tested-Sections-3-Forms)
     - [Bugs (now resolved)](#Bugs-(now-resolved))
 
 5. [Deployment](#Deployment)
@@ -70,27 +78,27 @@ An **issue tracker** web application that tracks bugs and feature requests.
 
 #### Goal
 
-An Issue tracking web application system that allows the user's to record and follow the progress of every bug or feature-request identified until the problem gets resolved. Additionally, there is the inclusion of an option for user's to donate money to fund work on future bugs, and features requests.
+An Issue tracking web application system that allows the user's to record and follow the progress of every bug or feature-request identified until the problem gets resolved. Additionally, there is the inclusion of an option for user's to donate money to fund work on future bugs and features requests.
 
 The core focus of this project is on functional app logic created with **Python** while utilising the **Django** framework.
 
 #### Functionality
 
-- Ability to create tickets for: bugs, and feature-requests.
+- Ability to create tickets for bugs and feature requests.
 - View and edit existing tickets.
-- Ability to send money donations.
-- See what the site is about and its motivation before joining. 
-- View documentation to how the site functions and any faq's. 
-- Alternative to sign in/sign up with a nearby profile 
-- See a rundown of as of recently made tickets on users landing page 
-- Make/alter/update/erase my very own tickets for a bug/highlight demand. 
-- Make/alter/update/erase my very own remarks for a bug/highlight demand. 
-- Donate towards an element 
-- View and perform activities on the site on a cell phone easily.
+- Ability to send monetary donations.
+- See what the site is about and its motivation before joining.
+- View documentation to how the site functions and any faq's.
+- Alternative to sign in/sign up with a nearby profile
+- See a rundown of as of recently made tickets on users landing page
+- Make/alter/update/erase own-tickets for a bug/highlight demand.
+- Make/alter/update/erase own-remarks for a bug/highlight demand.
+- Donate towards an element
+- View and perform activities on the site on a cell phone efficiently.
 
 #### Initiation
 
-Research to understand what apps of similar scope were already doing in terms of functionality which provided me with a list of what I consider to be feasible options for functionality implementations to acknowledge and consider pre-production.
+Research to understand what apps of similar scope were already doing in terms of functionality. Results provided a list of what I consider to be feasible options for functionality implementations to acknowledge and consider pre-production.
 
 [**To top**](#Table-of-Contents)
 
@@ -98,11 +106,11 @@ Research to understand what apps of similar scope were already doing in terms of
 
 #### Layout Pro (Boundless Adaptability)
 
-- Choosing a **multiple page application (MPA)** takes into consideration the choice to make new content and spot it on new pages. Multi-page applications can incorporate as much data as required, for this situation, numerous tickets, name enrolment page, donations page, account profile, with no page confinements. To say it necessarily, because there is a fair amount of content and features included on the application, I feel that an **MPA** is the best decision.
+- Choosing a **multiple page application (MPA)** takes into consideration the choice to make new content and spot it on new pages. Multi-page apps can incorporate as much data as required, for this situation, many tickets, name enrolment page, donations page, account profile, with no page confinements. To say it necessarily, because there is a fair amount of content and features included on the application, I feel that an **MPA** is the best decision.
 
 #### Layout Con (Moderate Speed and Execution)
 
-- Being as this is a multi-page application, a server needs to reload most assets, for example, HTML, CSS, and **Python** with each interaction. When loading another page, the browser completely reloads page information and downloads all assets once more, even rehashed segments throughout all pages (for example the header/navigation) which influences Speed and Execution.
+- Being as this is a multi-page application, a server needs to reload most assets, for example, HTML, CSS, and **Python** with each interaction. When loading another page, the browser completely reloads page information and downloads all assets once more. Reloading happens even after rehashed segments throughout all pages (for example the header/navigation) which influences Speed and Execution.
 
 #### Tablet Display
 
@@ -122,11 +130,11 @@ Research to understand what apps of similar scope were already doing in terms of
 
 #### Template Style
 
-Opted for a neutral style template with a sketched type design to project a more industrial look to the application which was acheived via use of [Bootswatch](https://bootswatch.com "Bootswatch Official Site") framework for the theme and standard [Bootstrap](https://getbootstrap.com/ "Bootstrap Official Site") for the UI components base.
+Opted for a neutral style template with a sketched type design to project a more industrial look to the application got achieved via the use of [Bootswatch](https://bootswatch.com "Bootswatch Official Site") framework for the theme and standard [Bootstrap](https://getbootstrap.com/ "Bootstrap Official Site") for the UI components base.
 
 #### Navigation
 
-- A navigation bar takes up space and a fixed one even more. That being the case, and that there is a lot of content to display in the form of tickets, etc., I deemed it not necessary to fix the navigation as there was no real advantage.
+- A navigation bar takes up space and a fixed one even more. Due to a lot of content on display in the form of tickets, etc., I deemed it not necessary to adjust the navigation as there was no real advantage.
 
 #### Colour Scheme
 
@@ -171,7 +179,7 @@ A placeholder image service provided by [Placeholder.com](https://placeholder.co
 - [HTML](https://www.w3.org/TR/html5/ "HTML5 Official Site")
 is a semantic markup language utilised as the shell of the site.
 
-- [CSS](https://www.w3.org/Style/CSS/ "Cascading Style Sheets Official Site") means Cascading Style Sheets and was used on the design of the site.
+- [CSS](https://www.w3.org/Style/CSS/ "Cascading Style Sheets Official Site") represents Cascading Style Sheets used on the design of the site.
 
 - [Python](www.python.org) was utilised to compose the game logic.
 
@@ -179,11 +187,11 @@ is a semantic markup language utilised as the shell of the site.
 
 - [PostgreSQL](https://www.postgresql.org/)  is a general-purpose object-relational database management system. It allows you to add custom functions developed using different programming languages, in this case, Python. 
 
-- [jQuery](http://jquery.com/ "jQuery Official Site") is used for HTML document traversal and manipulation, event handling.
+- [jQuery](http://jquery.com/ "jQuery Official Site") for HTML document traversal and manipulation, event handling.
 
 - [javascript](https://www.javascript.com/ "Javascript Official Site") is used to create responsive, interactive elements for web pages, enhancing the user experience.
 
-- [Bootstrap](https://getbootstrap.com/ "Bootstrap Official Site") is utilised for developing the entire UI and consistent throughout.
+- [Bootstrap](https://getbootstrap.com/ "Bootstrap Official Site") utilised for developing the entire UI.
 
 - [Font Awesome](https://fontawesome.com/ "Fontawesome Official Site") is the source for all icons.
 
@@ -191,15 +199,15 @@ is a semantic markup language utilised as the shell of the site.
 
 1. [Stripe](www.stripe.com/) is am online payment systems for making secure payments.
 
-2. [Dj Database URL](https://pypi.org/project/dj-database-url/) a package that enables us to interface with a database URL permit to utilise DATABASE_URL condition variable to arrange our Django application.
+2. [Dj Database URL](https://pypi.org/project/dj-database-url/) enables interface with a database URL permit to utilise DATABASE_URL condition variable to arrange our Django application.
 
 3. [Whitenoise](http://whitenoise.evans.io/en/stable/) permits to serve static records from Heroku without depending on different administrations.
 
 4. [Gunicorn](https://gunicorn.org/) is a Python WSGI HTTP Server for UNIX.
 
-5. [Bootswatch](https://bootswatch.com) is used for styling generic Bootstrap components.
+5. [Bootswatch](https://bootswatch.com) used for styling generic Bootstrap components.
 
-#### Database
+#### Utilised Database
 
 Heroku Postgres database was utilised for the deployed app.
 
@@ -218,18 +226,18 @@ Heroku Postgres database was utilised for the deployed app.
 1. Login & Sign Up
 2. Ticket List
 3. View Ticket Details
-4. Commment on own tickets
-5. Commment on user profile
+4. Comment on own tickets
+5. Comment on user profile
 6. Edit/Delete tickets
 7. Edit/Delete user profile
 8. Open new tickets based on bugs or feature requests
-9. Make a donation towards use of the application
+9. Donate towards the application
 10. Superusers/admins can gain access via the admin panel and perform, data amendments.
 
 #### Features Left to Implement
 
 1. Password Update
-2. Username and/or password update
+2. Username and password update
 3. Presently it is just conceivable to add remarks identified with the ticket; it could likewise be intriguing to enable clients to answer legitimately to a particular remark 
 4. Internal chat feature for users to interact with one another
 
@@ -291,11 +299,9 @@ Heroku Postgres database was utilised for the deployed app.
 
 #### Tested Sections 1 HTML & CSS
 
-- External links to third party websites and code authors GitHub repository.
+- External links to third party websites.
 
 - Checked button sizes so, they were responsive and large enough to be clicked.
-
-- Ensured individual section headers resized and appeared well when viewed on various device screens and added opacity to the navigation bar to allow for more visibility of section header area on smaller devices.
 
 - Spell checked all text content.
 
@@ -308,8 +314,64 @@ Heroku Postgres database was utilised for the deployed app.
 Manual testing was embraced for this application and acceptably passed. An example of the tests directed are as per the following:
 
 - Tested route catches and hyperlinks all through the page.
+
 - Tested the rationale of the application by looking at expected conduct against the database record information.
+
 - Tested the responsiveness of the application on various programs and after that utilising multiple gadgets.
+
+#### Tested Sections 3 Forms
+
+- Registration
+
+  - Leave an obligatory field clear 
+
+  - Input data using an invalid format
+
+  - Apply username that as of now exists 
+
+  - Apply non-coordinating passwords
+
+- Login
+
+  - Supplement wrong username/password
+
+  - Supplement username that doesn't align with the password
+
+  - Supplement password that doesn't align with the username
+
+- User Profile
+
+  - Clear and leave an obligatory field blank 
+
+  - Input data using an invalid format
+
+  - Apply and keep note data
+
+- Create Ticket
+
+  - Clear and leave an obligatory field blank 
+
+  - Apply and save notes in the details field
+
+  - Checked button size so, it was responsive and large enough to be clicked.
+
+- Ticket Details
+
+  - Delete specific and entire ticket data
+
+  - Navigate to `edit ticket` function via a button 
+
+  - Checked button size so, it was responsive and large enough to be clicked.
+
+- Donations
+
+- Supplement non-substantial card number 
+
+- Supplement a past date for card expiry date 
+
+- Supplement non-substantial CVC. 
+
+> On occasion, the CVC instalments are acknowledged, notwithstanding when CVC is left clear or notwithstanding when a not substantial CVC is embedded. According to [Stripe Rules](https://stripe.com/docs/radar/rules) documentation.
 
 [**To top**](#Table-of-Contents)
 
@@ -317,7 +379,7 @@ Manual testing was embraced for this application and acceptably passed. An examp
 
 A table from the Bootstrap framework caused a compatibility issue with Heroku due to its large size. Adding a custom media to condense the size; made the app more responsive on mobiles.
 
-> Please see the **Acknowledgements** section for the credit given to my assistance in solving the problem.
+> See the **Acknowledgements** section for the credit given to my assistance in solving the problem.
 
 ## Deployment
 
@@ -331,13 +393,13 @@ A table from the Bootstrap framework caused a compatibility issue with Heroku du
 
 3. `git add` and `git commit` the new prerequisites from the requirements.txt file and Procfile, then 'git push' the undertaking to GitHub. 
 
-4. Go to [Heroku](https://dashboard.heroku.com/) website.
+4. Go to the [Heroku](https://dashboard.heroku.com/) website.
 
-5. Make another application (app) on the [Heroku](https://dashboard.heroku.com/) website by tapping the "New" button on your dashboard. Name your app, followed by selecting Europe as your region. 
+5. Make another app on the [Heroku](https://dashboard.heroku.com/) website by tapping the "New" button on your dashboard. Name your app, followed by selecting Europe as your region. 
 
 6. Select application
 
-7. In the "Deployment Method" section, check to see if the application is already connected to GitHub. If not connected then click the relevant button to link the Heroku website to the dashboard.
+7. In the "Deployment Method" section, check to see if the application is connected already to GitHub. If not connected, then click the relevant button to link the Heroku website to the dashboard.
 
 8. Affirm the connecting of the Heroku application to the right GitHub repository. 
 
@@ -475,7 +537,7 @@ Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
 
 - I received inspiration for this project from visiting [b-i-tracker.herokuapp.com](https://b-i-tracker.herokuapp.com/), but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
 
-- Special thanks to fellow Code Institute colleague [Anna Greaves](https://github.com/AJGreaves) for assistance with a bespoke media query which was utilised to improve the applications responsiveness. 
+- Special thanks to fellow Code Institute colleague [Anna Greaves](https://github.com/AJGreaves) for assistance with a bespoke media query which was utilised  to improve the responsiveness of the application.
 
 #### Disclaimer
 
