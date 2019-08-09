@@ -53,7 +53,8 @@ This project is a fictional service, based on a real-world application, which of
     - [Tested Sections 1 HTML & CSS](#Tested-Sections-1-HTML-&-CSS)
     - [Tested Sections 2 Python](#Tested-Sections-2-Python)
     - [Tested Sections 3 Forms](#Tested-Sections-3-Forms)
-    - [Bugs (now resolved)](#Bugs-(now-resolved))
+    - [Bugs (resolved)](#Bugs-(resolved))
+    - [Bugs (unresolved)](#Bugs-(unresolved))
 
 5. [Deployment](#Deployment)
 
@@ -375,7 +376,7 @@ Manual testing was embraced for this application and acceptably passed. An examp
 
 [**To top**](#Table-of-Contents)
 
-#### Bugs (now resolved)
+#### Bugs (resolved)
 
 1. A table from the Bootstrap framework caused a compatibility issue with Heroku due to its large size. Adding a custom media to condense the size; made the app more responsive on mobiles.
 
@@ -384,6 +385,10 @@ Manual testing was embraced for this application and acceptably passed. An examp
 2. Initially, the file structure was quite different from the current set up; however, upon deployment to Heroku, it became an issue as the app malfunction via incorrect routing and crashing. For these reasons, the reconfiguration of file structure was necessary. 
 
 > The problem was most likely because of sessions not being persisted over page loads, due to the utilisation of the session engine. In hindsight, the built-in **Django user authentication model** should have been preferred for user authentication.
+
+#### Bugs (unresolved)
+
+1. When tickets get deleted, the numeral system does not reconfigure. For example, if there are tickets and number two is removed, the application will not subtract from the numeral status of ticket number three to account for ticket number two's removal.
 
 ## Deployment
 
