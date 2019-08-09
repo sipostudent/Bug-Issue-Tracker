@@ -371,15 +371,19 @@ Manual testing was embraced for this application and acceptably passed. An examp
 
 - Supplement non-substantial CVC. 
 
-> On occasion, the CVC instalments are acknowledged, notwithstanding when CVC is left clear or notwithstanding when a not substantial CVC is embedded. According to [Stripe Rules](https://stripe.com/docs/radar/rules) documentation.
+ > On occasion, the CVC instalments are acknowledged, notwithstanding when CVC is left clear or notwithstanding when a not substantial CVC is embedded. According to [Stripe Rules](https://stripe.com/docs/radar/rules) documentation.
 
 [**To top**](#Table-of-Contents)
 
 #### Bugs (now resolved)
 
-A table from the Bootstrap framework caused a compatibility issue with Heroku due to its large size. Adding a custom media to condense the size; made the app more responsive on mobiles.
+1. A table from the Bootstrap framework caused a compatibility issue with Heroku due to its large size. Adding a custom media to condense the size; made the app more responsive on mobiles.
 
 > See the **Acknowledgements** section for the credit given to my assistance in solving the problem.
+
+2. Initially, the file structure was quite different from the current set up; however, upon deployment to Heroku, it became an issue as the app malfunction via incorrect routing and crashing. For these reasons, the reconfiguration of file structure was necessary. 
+
+> The problem was most likely because of sessions not being persisted over page loads, due to the utilisation of the session engine. In hindsight, the built-in **Django user authentication model** should have been preferred for user authentication.
 
 ## Deployment
 
