@@ -399,13 +399,23 @@ Manual testing was embraced for this application and acceptably passed. An examp
 
 6. Select application
 
-7. In the "Deployment Method" section, check to see if the application is connected already to GitHub. If not connected, then click the relevant button to link the Heroku website to the dashboard.
+7. Make a point to add `your-app-name` provided by `Heroku` when you created your app and apply it to the `ALLOWED HOSTS` section located in the `production.py` file situated in the `settings` folder.
 
-8. Affirm the connecting of the Heroku application to the right GitHub repository. 
+```console
+# Allowed Hosts
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'your-app-name',
+]
+```
 
-9. In the application dashboard, click on `Settings` > `Reveal Config Vars` 
+8. In the "Deployment Method" section, check to see if the application is connected already to GitHub. If not connected, then click the relevant button to link the Heroku website to the dashboard.
 
-10. Set the accompanying config vars: 
+9. Affirm the connecting of the Heroku application to the right GitHub repository. 
+
+10. In the application dashboard, click on `Settings` > `Reveal Config Vars` 
+
+11. Set the accompanying config vars: 
 
 #### Serving Static Files
 
@@ -445,7 +455,7 @@ DATABASES = {
 
 ``` 
 
-3. In the Heroku application dashboard, click on "Settings" > "Reveal Config Vars". 
+3. In the Heroku application dashboard, click on `Settings` > `Reveal Config Vars` 
 
 4. Set the accompanying config vars which should also include the `database_url`
 
@@ -460,15 +470,17 @@ login Heroku
 6. From the console run the following command:
 
 ```console
-heroku run python3 manage.py migrate --app online-cookbook-sipo
+heroku run python manage.py migrate --app your-app-name
 ```
+
+> The command above is for a WINDOWS operating system. However, depending on your operating system (OS), the `python` command might need changing too with `python3` Follow this instruction wherever you need to utilise this method. Also, please follow the correct documentation regarding your OS.
 
 7. Create a `superuser`
 
 ```console
-heroku python3 manage.py createsuperuser --app online-cookbook-sipo
+heroku python manage.py createsuperuser --app your-app-name
 ```
-- Any progressions made to modals when the `makemigrations` command is run locally require obligatory submission of your migration files and deployment of the newer versions. Afterwards, run `heroku run python3 manage.py migrate app online-cookbook-sipo` to create migrations in a development environment.
+- Any progressions made to modals when the `makemigrations` command is run locally require obligatory submission of your migration files and deployment of the newer versions. Afterwards, run `heroku run python manage.py migrate app your-app-name` to create migrations in a development environment.
 
 - Ordinarily, you would likewise need to introduce dj-database-url, a bundle that enables us to interface with a database url, and psycopg2 yet these bundles ought to be as of now introduced after the requirements.txt establishment
 
@@ -506,6 +518,8 @@ python -m venv venv
 ```console
 venv\Scripts\activate
 ```
+
+> The command above is for a WINDOWS operating system. However, if you are on a MAC or LINUX operating system (OS), the `venv\Scripts\activate` command will need changing too with `venv\bin\activate` For further details, please refer to the correct documentation regarding your OS.
 
 > You would then be able to start introducing any new modules without influencing the framework default Python or other virtual environments.
 
@@ -558,7 +572,7 @@ Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
 
 - I received inspiration for this project from performing various Google Image search, which led me to various issue-tracker applications, but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
 
-- Special thanks to fellow Code Institute colleague [Anna Greaves](https://github.com/AJGreaves) for assistance with a bespoke media query which was utilised  to improve the responsiveness of the application.
+- Special thanks to fellow Code Institute colleague [Anna Greaves](https://github.com/AJGreaves) for assistance with a bespoke media query which was utilised  to improve the responsiveness of the application. [Sean Murphy](https://github.com/nazarja) for breaking down complex Django framework concepts and being a guide in the reconfiguration of file structure which was necessary for successful  Heroku deployment. Last but not least, [Simen Daehlin](https://github.com/Eventyret) for his consistent on-call technical support regarding any & all matters.
 
 #### Disclaimer
 
