@@ -241,6 +241,7 @@ Heroku Postgres database was utilised for the deployed app.
 2. Username and password update
 3. Presently it is just conceivable to add remarks identified with the ticket; it could likewise be intriguing to enable clients to answer legitimately to a particular remark 
 4. Internal chat feature for users to interact with one another
+5. Avatar integration for user profile
 
 ## Testing
 
