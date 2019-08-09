@@ -556,7 +556,7 @@ Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
 
 #### Acknowledgements
 
-- I received inspiration for this project from visiting [b-i-tracker.herokuapp.com](https://b-i-tracker.herokuapp.com/), but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
+- I received inspiration for this project from performing various Google Image search, which led me to various issue-tracker applications, but mostly from my interaction with other students on Code Institute's Full Stack Software Development Programme.
 
 - Special thanks to fellow Code Institute colleague [Anna Greaves](https://github.com/AJGreaves) for assistance with a bespoke media query which was utilised  to improve the responsiveness of the application.
 
