@@ -190,7 +190,7 @@ is a semantic markup language utilised as the shell of the site.
 
 - [jQuery](http://jquery.com/ "jQuery Official Site") for HTML document traversal and manipulation, event handling.
 
-- [javascript](https://www.javascript.com/ "Javascript Official Site") is used to create responsive, interactive elements for web pages, enhancing the user experience.
+- [JavaScript](https://www.javascript.com/ "JavaScript Official Site") is used to create responsive, interactive elements for web pages, enhancing the user experience.
 
 - [Bootstrap](https://getbootstrap.com/ "Bootstrap Official Site") utilised for developing the entire UI.
 
