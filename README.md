@@ -143,29 +143,19 @@ Opted for a neutral style template with a sketched type design to project a more
 
   - ![#343a40](https://placehold.it/15/#343a40/000000?text=+) `#343a40` color description : Very dark grayish blue.
 
-    - navigations
-    - footer
-    - table
-
   - ![#1a1a1a](https://placehold.it/15/1a1a1a/000000?text=+) `#1a1a1a` color description : Very dark gray (mostly black).
-
-    - button
 
   - ![#f7f7f7](https://placehold.it/15/f7f7f7/000000?text=+) `#f7f7f7` color description : Very light gray (mostly white).
 
-    - color
 
   - ![#f0ad4e](https://placehold.it/15/f0ad4e/000000?text=+) `#f0ad4e` color description : Soft orange.
 
-    - color
 
   - ![#d9534f](https://placehold.it/15/d9534f/000000?text=+) `#d9534f` color description : Soft red.
 
-    - color
 
   - ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` color description : White.
 
-    - color
 
 A colour encyclopedia provided by [ColorHexa](https://www.colorhexa.com/ "ColorHexa Official Site") was used to generate matching colour palettes.
 
@@ -413,7 +403,7 @@ Manual testing was embraced for this application and acceptably passed. An examp
 
 8. Affirm the connecting of the Heroku application to the right GitHub repository. 
 
-9. In the application dashboard, click on "Settings" > "Reveal Config Vars". 
+9. In the application dashboard, click on `Settings` > `Reveal Config Vars` 
 
 10. Set the accompanying config vars: 
 
@@ -503,17 +493,38 @@ Deploy your changes, make some changes to the code you just cloned and deploy th
 
 1. Download the project onto a PC and open with a source-code editor.
 
-2. In the run.py file set the IP address and the PORT to the following:
+2. CD to your prefered directory, for example, `cd Desktop` and create a virtual environment.
 
 ```console
-'IP', '127.0.0.1'
+python -m venv venv
 ```
 
+> This makes a duplicate of Python in whichever directory you ran the order in, setting it in a folder named venv.
+
+3. For utilising the virtual environment, `activate`
+
 ```console
-'PORT', '8000'
+venv\Scripts\activate
 ```
+
+> You would then be able to start introducing any new modules without influencing the framework default Python or other virtual environments.
+
 
 3. Install all of the prerequisites shown in the requirements.txt file via opening a Command-line interface (CLI) and navigating to the project root or by opening an integrated terminal and entering the following command:
+
+> Please Note: The CLI method for interacting with a computer may vary dependant upon the operating system in use.
+
+4. On the off chance that you are finished working in the virtual condition for the occasion, you can `deactivate`
+
+```console
+deactivate
+```
+
+> The 'deactivate' direction returns you to the framework's default Python translator with all its introduced libraries. 
+
+> To erase a virtual environment, simply erase its folder.
+
+5. Install all of the prerequisites shown in the requirements.txt file via opening a Command-line interface (CLI) and navigating to the project root or by opening an integrated terminal and entering the following command:
 
 > Please Note: The CLI method for interacting with a computer may vary dependant upon the operating system in use.
 
@@ -527,13 +538,13 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-5. A message in your terminal will inform you that the project is now running with the following message:
+> A message in your terminal will inform you that the project is now running with the following message:
 
 ```console
 Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
 ```
 
-6. To display the project, open the above URL (localhost:8000) 
+6. To display the project, open the above URL or `localhost:8000` 
 
 [**To top**](#Table-of-Contents)
 
