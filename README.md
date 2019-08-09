@@ -45,7 +45,7 @@ This project is a fictional service, based on a real-world application, which of
 
     - [Existing Features](#Existing-Features)
     
-    - [Features-Left-to-Implement](#Features-Left-to-Implement)
+    - [Features Left to Implement](#Features-Left-to-Implement)
 
 4. [Testing](#Testing)
 
